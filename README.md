@@ -33,7 +33,7 @@ pip install --editable .
 ### Run the Application
 
 ```shell
-python src/dall_e/main.py
+python src/python_hello_docker/main.py
 ```
 
 ### Execute the Tests Once
