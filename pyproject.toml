@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "python_hello_docker"
+version = "0.0.1"
+authors = [
+  { name="Stefan Boos", email="kontakt@boos.systems" },
+]
+description = "Develop a python app from within a docker container"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/wonderbird/python_hello_docker"
+"Bug Tracker" = "https://github.com/wonderbird/python_hello_docker/issues"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
+
+[tool.hatch.build.targets.wheel]  
+packages = ["src/python_hello_docker"]
