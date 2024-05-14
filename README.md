@@ -2,13 +2,23 @@
 
 Develop a python app from within a docker container
 
-## Acknowledgements
+## Status
 
-Many thanks ❤️ go to
+This simple application shows the version of the python interpreter running [src/python_hello_docker/main.py](./src/python_hello_docker/main.py). The [Dockerfile](./Dockerfile) is configured for python 3.
 
-- [JetBrains](https://www.jetbrains.com/?from=PROJECT-NAME) who provide an [Open Source License](https://www.jetbrains.com/community/opensource/) for this project
+## Debugging from Inside the Docker Container
 
-## Developer Guide
+Read and follow the **Preqequisites** section in in [Build and run a Python app in a container](https://code.visualstudio.com/docs/containers/quickstart-python) to setup your Visual Studio Code and Docker for debugging the application.
+
+To debug, jump to the section **Build, run, and debug the container** in [Build and run a Python app in a container](https://code.visualstudio.com/docs/containers/quickstart-python):
+
+1. Navigate to the file that contains your app's startup code, and set a breakpoint
+
+2. Navigate to Run and Debug and select Docker: Python - General
+
+3. Start debugging using the F5 key
+
+## Developing Locally on Your Machine
 
 ### Prerequisites
 
